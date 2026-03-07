@@ -1,0 +1,52 @@
+{
+    "protocolVersion": "0.2.9",
+    "name": "HR Automation Agent",
+    "description": "An all-in-one AI HR Automation Agent that handles three core HR workflows: (1) Recruitment — screen resumes, score candidates, and draft interview invitation emails; (2) Onboarding — generate personalized onboarding checklists and answer new hire questions; (3) HR Helpdesk — answer employee policy queries and escalate complex issues with structured tickets. Designed to reduce repetitive HR workload and let HR teams focus on strategic, people-focused work.",
+    "url": "http://localhost:5000/",
+    "preferredTransport": "JSONRPC",
+    "provider": {
+        "organization": "Nasiko Buildathon Team",
+        "url": "https://github.com/your-username/hr-automation-agent"
+    },
+    "iconUrl": "http://localhost:5000/icon.png",
+    "version": "1.0.0",
+    "documentationUrl": "http://localhost:5000/docs",
+    "capabilities": {
+        "streaming": false,
+        "pushNotifications": false,
+        "stateTransitionHistory": true,
+        "chat_agent": true
+    },
+    "securitySchemes": {},
+    "security": [],
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain"],
+    "skills": [
+        {
+            "name": "screen_resume",
+            "description": "Score and evaluate a candidate resume against a job description with shortlist recommendation"
+        },
+        {
+            "name": "draft_interview_email",
+            "description": "Draft a professional, personalized interview invitation email for a shortlisted candidate"
+        },
+        {
+            "name": "generate_onboarding_checklist",
+            "description": "Generate a role-specific onboarding checklist covering pre-arrival, Day 1, Week 1, and Month 1"
+        },
+        {
+            "name": "answer_onboarding_question",
+            "description": "Answer common questions from new hires about first-day procedures, tools, and company processes"
+        },
+        {
+            "name": "answer_hr_policy",
+            "description": "Answer employee questions about leave, payroll, benefits, working hours, and HR policies"
+        },
+        {
+            "name": "escalate_issue",
+            "description": "Create a structured escalation ticket for complex or sensitive HR issues requiring human intervention"
+        }
+    ],
+    "supportsAuthenticatedExtendedCard": false,
+    "signatures": []
+}
